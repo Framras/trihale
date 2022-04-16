@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include trihale *.css
+recursive-include trihale *.csv
+recursive-include trihale *.html
+recursive-include trihale *.ico
+recursive-include trihale *.js
+recursive-include trihale *.json
+recursive-include trihale *.md
+recursive-include trihale *.png
+recursive-include trihale *.py
+recursive-include trihale *.svg
+recursive-include trihale *.txt
+recursive-exclude trihale *.pyc
