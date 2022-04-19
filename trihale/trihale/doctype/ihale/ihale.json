@@ -1,0 +1,210 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:ihale_kayit_numarasi",
+ "creation": "2022-04-19 22:28:06.551719",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "idari_1",
+  "idare_tipi",
+  "column_break_3",
+  "idare_adi",
+  "idare_adresi",
+  "idari_2",
+  "ihale_adi",
+  "column_break_8",
+  "ihale_teslimyeri",
+  "idari_3",
+  "ihale_kayit_numarasi",
+  "column_break_12",
+  "ihale_teklif_tarih_saat",
+  "idari_24",
+  "teklif_gecerlilik_suresi",
+  "idari_26",
+  "geciciteminat_orani",
+  "section_break_18",
+  "geciciteminat_gecerliliktarihi",
+  "section_ek",
+  "ihalekalemleri",
+  "section_sozlesme",
+  "etebligatadresi",
+  "sozlesme_9",
+  "sozlesmeninsuresi",
+  "sozlesme_12",
+  "odemevadesi"
+ ],
+ "fields": [
+  {
+   "fieldname": "idare_tipi",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Tipi",
+   "options": "DocType",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "idare_adi",
+   "fieldtype": "Dynamic Link",
+   "in_list_view": 1,
+   "label": "Ad\u0131",
+   "options": "idare_tipi",
+   "reqd": 1
+  },
+  {
+   "fieldname": "idare_adresi",
+   "fieldtype": "Link",
+   "label": "Adresi",
+   "options": "Address"
+  },
+  {
+   "fieldname": "ihale_kayit_numarasi",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u0130hale kay\u0131t numaras\u0131",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ihale_teklif_tarih_saat",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "\u0130hale (son teklif verme) tarihi ve saati:",
+   "reqd": 1
+  },
+  {
+   "fieldname": "teklif_gecerlilik_suresi",
+   "fieldtype": "Int",
+   "label": "Tekliflerin ge\u00e7erlilik s\u00fcresi"
+  },
+  {
+   "fieldname": "ihale_adi",
+   "fieldtype": "Small Text",
+   "label": "Ad\u0131"
+  },
+  {
+   "fieldname": "ihale_teslimyeri",
+   "fieldtype": "Link",
+   "label": "\u0130\u015fin yap\u0131laca\u011f\u0131/teslim edilece\u011fi yer",
+   "options": "Address"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_ek",
+   "fieldtype": "Section Break",
+   "label": "EK"
+  },
+  {
+   "fieldname": "ihalekalemleri",
+   "fieldtype": "Table",
+   "label": "\u0130hale Kalemleri",
+   "options": "Ihale Kalemleri"
+  },
+  {
+   "fieldname": "geciciteminat_orani",
+   "fieldtype": "Percent",
+   "label": "Ge\u00e7ici teminat oran\u0131",
+   "precision": "2"
+  },
+  {
+   "fieldname": "section_break_18",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "geciciteminat_gecerliliktarihi",
+   "fieldtype": "Date",
+   "label": "Ge\u00e7erlilik tarihi"
+  },
+  {
+   "bold": 1,
+   "fieldname": "idari_1",
+   "fieldtype": "Section Break",
+   "label": "\u0130dareye ili\u015fkin bilgiler"
+  },
+  {
+   "fieldname": "idari_2",
+   "fieldtype": "Section Break",
+   "label": "\u0130hale konusu i\u015fe/al\u0131ma ili\u015fkin bilgiler"
+  },
+  {
+   "fieldname": "idari_3",
+   "fieldtype": "Section Break",
+   "label": "\u0130haleye ili\u015fkin bilgiler"
+  },
+  {
+   "fieldname": "idari_24",
+   "fieldtype": "Section Break",
+   "label": "Tekliflerin ge\u00e7erlilik s\u00fcresi"
+  },
+  {
+   "fieldname": "idari_26",
+   "fieldtype": "Section Break",
+   "label": "Ge\u00e7ici teminat"
+  },
+  {
+   "fieldname": "section_sozlesme",
+   "fieldtype": "Section Break",
+   "label": "S\u00d6ZLE\u015eME B\u0130LG\u0130LER\u0130"
+  },
+  {
+   "fieldname": "etebligatadresi",
+   "fieldtype": "Data",
+   "label": "Elektronik tebligat adresi"
+  },
+  {
+   "fieldname": "sozlesme_9",
+   "fieldtype": "Section Break",
+   "label": "S\u00f6zle\u015fmenin s\u00fcresi"
+  },
+  {
+   "fieldname": "sozlesmeninsuresi",
+   "fieldtype": "Int",
+   "label": "S\u00f6zle\u015fmenin s\u00fcresi"
+  },
+  {
+   "fieldname": "sozlesme_12",
+   "fieldtype": "Section Break",
+   "label": "\u00d6deme yeri ve \u015fartlar\u0131"
+  },
+  {
+   "fieldname": "odemevadesi",
+   "fieldtype": "Int",
+   "label": "\u00d6deme Vadesi"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-04-19 23:12:55.248213",
+ "modified_by": "Administrator",
+ "module": "Trihale",
+ "name": "Ihale",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
